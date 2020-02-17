@@ -11,11 +11,11 @@ namespace Executer
     {
         static void Main(string[] args)
         {
-            var executers = AppDomain.CurrentDomain.GetAssemblies()
+            var executors = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(s => s.GetTypes())
                 .Where(p => typeof(IExecutor).IsAssignableFrom(p));
 
-            foreach (var item in executers)
+            foreach (var item in executors)
             {
                 if (item.Name != "IExecutor")
                 {
