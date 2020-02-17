@@ -4,18 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Algorithms\Backtracking\" />
-    <Folder Include="Algorithms\Bit Algorithms\" />
-    <Folder Include="Algorithms\Branch and Bound\" />
-    <Folder Include="Algorithms\Divide and Conquer\" />
-    <Folder Include="Algorithms\Dynamic Programming\" />
-    <Folder Include="Algorithms\Geometric Algorithms\" />
-    <Folder Include="Algorithms\Greedy Algorithms\" />
-    <Folder Include="Algorithms\Mathematical Algorithms\" />
-    <Folder Include="Algorithms\Randomized Algorithms\" />
-    <Folder Include="Algorithms\Pattern Searching\" />
-    <Folder Include="Algorithms\Other String Algorithms\" />
-  </ItemGroup>
-
 </Project>
