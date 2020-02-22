@@ -21,7 +21,7 @@ namespace Core.Algorithms.Searching_and_Sorting
 
                 if (list[mid] == searchVal)
                 {
-                    return mid + 1;
+                    return mid;
                 }
 
                 if (list[mid] > searchVal)

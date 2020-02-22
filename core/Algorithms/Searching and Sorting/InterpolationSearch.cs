@@ -27,7 +27,7 @@ namespace Core.Algorithms.Searching_and_Sorting
                 int pos = lo + ((hi - lo) / ((list[hi] - list[lo]) * (searchVal - list[lo])));
 
                 if (list[pos] == searchVal)
-                    return pos + 1;
+                    return pos;
 
                 if (list[pos] < searchVal)
                     lo = pos + 1;

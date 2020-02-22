@@ -34,7 +34,7 @@ namespace Core.Algorithms.Searching_and_Sorting
             }
 
             if (list[prev] == searchVal)
-                return prev+1;
+                return prev;
             return -1;
         }
     }

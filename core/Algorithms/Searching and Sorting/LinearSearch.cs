@@ -18,7 +18,7 @@ namespace Core.Algorithms.Searching_and_Sorting
 
             for (int i = 0; i < list.Count; i++)
             {
-                if (list[i] == searchVal) return i+1;
+                if (list[i] == searchVal) return i;
             }
 
             return -1;
