@@ -32,6 +32,7 @@ namespace Core.Algorithms.Searching_and_Sorting
                 if (prev == Math.Min(step, list.Count))
                     return -1;
             }
+
             if (list[prev] == searchVal)
                 return prev+1;
             return -1;
