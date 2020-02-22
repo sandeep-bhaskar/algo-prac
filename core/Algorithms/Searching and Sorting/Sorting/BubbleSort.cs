@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core.Algorithms.Searching_and_Sorting.Sorting
 {
-    public class BubbleSort : IPracticeExecutor
+    public class BubbleSort : IExecutor
     {
         public void Execute()
         {
