@@ -9,7 +9,19 @@ namespace Core.Algorithms.Searching_and_Sorting
     {
         public void Execute()
         {
-            Console.WriteLine("Write your logic here");
+            List<int> list = new List<int>() { 1, 5, 6, 4, 6, 8, 5 };
+            Console.WriteLine(Search(list, 6));
+        }
+
+        public static int Search(List<int> list, int searchVal)
+        {
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] == searchVal) return i+1;
+            }
+
+            return -1;
         }
     }
 }
