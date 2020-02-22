@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core.Algorithms.Searching_and_Sorting
 {
-    public class TernarySearch : IPracticeExecutor
+    public class TernarySearch : IExecutor
     {
         public void Execute()
         {
