@@ -13,7 +13,7 @@ namespace Core.Algorithms.Searching_and_Sorting
             Console.WriteLine(Search(list, 9));
         }
 
-        public int Search(List<int> list, int searchVal)
+        public static int Search(List<int> list, int searchVal)
         {
             if (list[0] == searchVal)
                 return 0;
