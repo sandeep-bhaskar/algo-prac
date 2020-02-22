@@ -11,13 +11,25 @@ namespace Executer
     {
         static void Main(string[] args)
         {
-            var executors = AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(s => s.GetTypes())
-                .Where(p => typeof(IExecutor).IsAssignableFrom(p));
+
+            IEnumerable<Type> executors;
+
+            if (args.Any(_ => _ == "dev"))
+            {
+                executors = AppDomain.CurrentDomain.GetAssemblies()
+               .SelectMany(s => s.GetTypes())
+               .Where(p => typeof(IPracticeExecutor).IsAssignableFrom(p));
+            }
+            else
+            {
+                executors = AppDomain.CurrentDomain.GetAssemblies()
+                    .SelectMany(s => s.GetTypes())
+                    .Where(p => typeof(IExecutor).IsAssignableFrom(p));
+            }
 
             foreach (var item in executors)
             {
-                if (item.Name != "IExecutor")
+                if (item.Name != "IExecutor" && item.Name != "IPracticeExecutor")
                 {
                     Stopwatch stopWatch = new Stopwatch();
                     stopWatch.Start();

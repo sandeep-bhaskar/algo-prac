@@ -8,4 +8,8 @@ namespace Core.Contracts
     {
         public void Execute();
     }
+
+    public interface IPracticeExecutor : IExecutor
+    {
+    }
 }

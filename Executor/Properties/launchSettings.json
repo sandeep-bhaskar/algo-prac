@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Executor": {
+      "commandName": "Project",
+      "commandLineArgs": "dev"
+    }
+  }
+}
