@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Core.Algorithms.Pattern_Searching
 {
-    class Class1
+    class KnuthMorrisPratt
     {
     }
 }
